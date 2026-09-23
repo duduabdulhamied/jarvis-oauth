@@ -1,1 +1,84 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kebijakan Privasi — Jarvis Personal</title><style>body{font:16px/1.65 system-ui;max-width:760px;margin:0 auto;padding:48px 22px;color:#17213a;background:#f6f8fc}main{background:#fff;padding:34px;border-radius:20px;box-shadow:0 16px 44px #18233b14}h1,h2{line-height:1.2}a{color:#2459c4}</style></head><body><main><h1>Kebijakan Privasi Jarvis Personal</h1><p>Terakhir diperbarui: 23 September 2026.</p><h2>Tujuan</h2><p>Jarvis Personal memakai Google Drive API agar pemilik dapat melihat daftar folder dan file, mencari nama file, melihat metadata dasar, serta membuka file pada layanan Google Drive.</p><h2>Data yang diakses</h2><p>Scope Google Drive baca saja secara teknis mengizinkan aplikasi melihat dan mengunduh file. Implementasi Jarvis saat ini meminta identitas akun, informasi kuota, dan metadata file seperti nama, tipe, ukuran, waktu perubahan, status bersama/favorit, serta tautan tampilan. Jarvis tidak menyediakan fitur upload, edit, pindah, berbagi, atau hapus.</p><h2>Penyimpanan dan keamanan</h2><p>Refresh token dan OAuth client disimpan sebagai systemd encrypted credential pada server pribadi ARP Mint. Access token hanya dicache sementara di memori proses. Browser dan perangkat pengguna tidak menerima client secret, refresh token, atau access token. Daftar isi Drive tidak disimpan sebagai cache offline oleh Jarvis.</p><h2>Berbagi dan penjualan</h2><p>Data Google tidak dijual, disewakan, atau dibagikan kepada pihak lain oleh Jarvis Personal. File yang dipilih dibuka langsung pada domain resmi Google.</p><h2>Retensi dan pencabutan</h2><p>Kredensial dipertahankan selama integrasi digunakan. Pemilik dapat mencabut akses melalui halaman koneksi akun Google dan menghapus credential terenkripsi dari server.</p><h2>Kontak</h2><p>Pertanyaan privasi dapat dikirim ke <a href="mailto:duduabdulhamied@gmail.com">duduabdulhamied@gmail.com</a>.</p><p><a href="index.html">Kembali ke beranda</a></p></main></body></html>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kebijakan privasi integrasi Google Drive pada aplikasi pribadi Jarvis.">
+  <title>Kebijakan Privasi — Jarvis Personal</title>
+  <style>
+    :root { color-scheme: light; --ink:#17213a; --muted:#5b6679; --line:#dfe5ef; --brand:#2459c4; --brand-soft:#edf3ff; --paper:#fff; --canvas:#f4f7fb; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:linear-gradient(180deg,#eef3fb 0,var(--canvas) 280px); color:var(--ink); font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:800px; margin:56px auto; padding:46px; background:var(--paper); border:1px solid var(--line); border-radius:22px; box-shadow:0 18px 50px #17213a12; }
+    header { padding-bottom:28px; }
+    .eyebrow { margin:0 0 10px; color:var(--brand); font-size:.8rem; font-weight:750; letter-spacing:.1em; text-transform:uppercase; }
+    h1 { margin:0 0 12px; font-size:clamp(2.15rem,7vw,3rem); line-height:1.1; }
+    h2 { margin:0 0 10px; font-size:1.18rem; }
+    p { margin:0 0 1em; color:var(--muted); }
+    .lead { margin:0; color:var(--ink); font-size:1.08rem; }
+    .updated { margin-top:12px; font-size:.9rem; }
+    section { padding:26px 0 10px; border-top:1px solid var(--line); }
+    .notice { margin:12px 0 18px; padding:17px 19px; background:var(--brand-soft); border-left:4px solid var(--brand); border-radius:10px; }
+    .notice strong { display:block; margin-bottom:4px; }
+    .notice p { margin:0; color:#364866; }
+    a { color:var(--brand); font-weight:680; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .back { margin:24px 0 0; }
+    .back a { display:inline-block; padding:10px 15px; background:#f8faff; border:1px solid var(--line); border-radius:10px; }
+    @media (max-width:640px) { body{background:var(--paper)} main{margin:0;min-height:100vh;padding:32px 22px;border:0;border-radius:0;box-shadow:none} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Jarvis Personal</p>
+      <h1>Kebijakan Privasi</h1>
+      <p class="lead">Dokumen ini menjelaskan cara aplikasi pribadi saya, Jarvis, terhubung dengan akun Google Drive milik saya.</p>
+      <p class="updated">Terakhir diperbarui pada 23 September 2026.</p>
+    </header>
+
+    <section>
+      <h2>Tentang Jarvis dan Google Drive</h2>
+      <p>Jarvis adalah aplikasi pribadi yang saya buat dan gunakan untuk kebutuhan sendiri. Saya menghubungkan Jarvis dengan Google Drive supaya penyimpanan dan pengelolaan file pribadi dapat dilakukan dengan lebih mudah dari satu aplikasi.</p>
+      <p>Integrasi ini berjalan pada server pribadi ARP Mint dan hanya dapat digunakan setelah masuk ke Jarvis dari perangkat yang sudah saya izinkan.</p>
+    </section>
+
+    <section>
+      <h2>Fungsi yang tersedia saat ini</h2>
+      <p>Jarvis dapat menampilkan folder dan file, mencari file berdasarkan nama, serta membuka file melalui layanan resmi Google Drive.</p>
+      <div class="notice">
+        <strong>Akses masih baca saja</strong>
+        <p>Penyimpanan dan backup dari Jarvis ke Google Drive belum diaktifkan. Fitur tersebut akan saya siapkan secara terpisah.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Data yang dapat diakses</h2>
+      <p>Jarvis memakai izin Google Drive baca saja. Izin tersebut secara teknis memungkinkan aplikasi melihat dan mengunduh file. Dalam penggunaan saya saat ini, Jarvis hanya meminta informasi akun dan kuota penyimpanan, serta metadata file seperti nama, jenis, ukuran, waktu perubahan, status berbagi, status favorit, dan tautan untuk membuka file.</p>
+      <p>Jarvis tidak menyediakan fungsi untuk mengunggah, mengubah, memindahkan, membagikan, atau menghapus file di Google Drive.</p>
+    </section>
+
+    <section>
+      <h2>Cara data diproses</h2>
+      <p>Permintaan ke Google Drive dikirim oleh server pribadi ARP Mint. Informasi yang diperlukan kemudian ditampilkan pada halaman Google Drive di Jarvis. Saat saya memilih sebuah file, Jarvis membukanya melalui tautan resmi Google Drive.</p>
+      <p>Daftar file tidak disimpan sebagai salinan offline oleh Jarvis. Data Google Drive juga tidak dijual, disewakan, atau diberikan kepada pihak lain.</p>
+    </section>
+
+    <section>
+      <h2>Keamanan kredensial</h2>
+      <p>Refresh token dan kredensial OAuth disimpan dalam bentuk terenkripsi pada server ARP Mint. Access token hanya disimpan sementara di memori selama layanan berjalan. Browser dan perangkat yang saya gunakan tidak menerima client secret, refresh token, atau access token.</p>
+    </section>
+
+    <section>
+      <h2>Pencabutan akses</h2>
+      <p>Saya dapat menghentikan integrasi kapan saja dengan mencabut akses Jarvis Personal melalui pengaturan Akun Google dan menghapus kredensial terenkripsi dari server.</p>
+    </section>
+
+    <section>
+      <h2>Kontak</h2>
+      <p>Pertanyaan mengenai kebijakan ini dapat dikirim ke <a href="mailto:duduabdulhamied@gmail.com">duduabdulhamied@gmail.com</a>.</p>
+      <p class="back"><a href="index.html">Kembali ke halaman utama</a></p>
+    </section>
+  </main>
+</body>
+</html>

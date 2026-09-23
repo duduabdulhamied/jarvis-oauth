@@ -1,1 +1,109 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jarvis Personal — Google Drive</title><style>body{font:16px/1.65 system-ui;max-width:760px;margin:0 auto;padding:48px 22px;color:#17213a;background:#f6f8fc}main{background:#fff;padding:34px;border-radius:20px;box-shadow:0 16px 44px #18233b14}h1{font-size:2rem}a{color:#2459c4}nav{display:flex;gap:18px;flex-wrap:wrap}</style></head><body><main><h1>Jarvis Personal</h1><p>Jarvis Personal adalah aplikasi pribadi milik Abdul Hamied. Integrasi Google Drive dipakai oleh pemilik untuk melihat daftar file dan membuka file miliknya melalui server pribadi ARP Mint.</p><p>Integrasi ini tidak ditawarkan sebagai layanan publik dan tidak menjual atau membagikan data Google kepada pihak lain.</p><nav><a href="privacy.html">Kebijakan Privasi</a><a href="terms.html">Ketentuan Penggunaan</a></nav></main></body></html>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informasi resmi integrasi Google Drive pada aplikasi pribadi Jarvis milik Abdul Hamied.">
+  <title>Jarvis Personal — Integrasi Google Drive</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17213a;
+      --muted: #5b6679;
+      --line: #dfe5ef;
+      --brand: #2459c4;
+      --brand-soft: #edf3ff;
+      --paper: #ffffff;
+      --canvas: #f4f7fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef3fb 0, var(--canvas) 280px);
+      color: var(--ink);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 800px;
+      margin: 56px auto;
+      padding: 46px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 18px 50px #17213a12;
+    }
+    header { padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--brand);
+      font-size: .8rem;
+      font-weight: 750;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0 0 16px; font-size: clamp(2.25rem, 7vw, 3.35rem); line-height: 1.08; }
+    h2 { margin: 0 0 10px; font-size: 1.25rem; }
+    p { margin: 0 0 1em; color: var(--muted); }
+    .lead { max-width: 650px; margin: 0; color: var(--ink); font-size: 1.12rem; }
+    section { padding-top: 30px; }
+    .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 26px 0; }
+    .fact { padding: 16px; background: #f8faff; border: 1px solid var(--line); border-radius: 14px; }
+    .fact span { display: block; margin-bottom: 4px; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+    .fact strong { font-size: .98rem; }
+    .notice { margin-top: 24px; padding: 18px 20px; background: var(--brand-soft); border-left: 4px solid var(--brand); border-radius: 10px; }
+    .notice strong { display: block; margin-bottom: 4px; }
+    .notice p { margin: 0; color: #364866; }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--line); }
+    a { color: var(--brand); font-weight: 680; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav a { padding: 10px 15px; background: #f8faff; border: 1px solid var(--line); border-radius: 10px; }
+    footer { margin-top: 32px; color: var(--muted); font-size: .92rem; }
+    footer strong { color: var(--ink); }
+    @media (max-width: 640px) {
+      body { background: var(--paper); }
+      main { margin: 0; min-height: 100vh; padding: 32px 22px; border: 0; border-radius: 0; box-shadow: none; }
+      .facts { grid-template-columns: 1fr; }
+      nav { flex-direction: column; }
+      nav a { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Aplikasi pribadi saya</p>
+      <h1>Jarvis Personal</h1>
+      <p class="lead">Saya memiliki aplikasi pribadi yang saya beri nama Jarvis. Aplikasi ini saya buat khusus untuk membantu kebutuhan saya sendiri.</p>
+    </header>
+
+    <section aria-labelledby="tujuan-integrasi">
+      <h2 id="tujuan-integrasi">Tujuan integrasi Google Drive</h2>
+      <p>Saya menghubungkan Jarvis dengan akun Google Drive saya supaya penyimpanan dan pengelolaan file pribadi menjadi lebih mudah dari satu tempat.</p>
+      <p>Melalui Jarvis, saya dapat melihat folder, mencari file, dan membukanya langsung di Google Drive tanpa harus berpindah-pindah aplikasi.</p>
+
+      <div class="facts" aria-label="Ringkasan aplikasi">
+        <div class="fact"><span>Pemilik</span><strong>Abdul Hamied</strong></div>
+        <div class="fact"><span>Penggunaan</span><strong>Pribadi</strong></div>
+        <div class="fact"><span>Akses Drive</span><strong>Baca saja</strong></div>
+      </div>
+
+      <div class="notice">
+        <strong>Status saat ini</strong>
+        <p>Koneksi Google Drive masih menggunakan akses baca saja. Fitur penyimpanan atau backup dari Jarvis ke Google Drive akan saya aktifkan secara terpisah setelah mekanismenya selesai disiapkan dan diuji.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="batas-penggunaan">
+      <h2 id="batas-penggunaan">Penggunaan terbatas</h2>
+      <p>Jarvis hanya saya gunakan melalui akun dan perangkat yang sudah saya izinkan. Aplikasi ini tidak saya sediakan sebagai layanan untuk umum. Data Google Drive saya tidak dijual, disewakan, atau dibagikan kepada pihak lain.</p>
+    </section>
+
+    <nav aria-label="Dokumen aplikasi">
+      <a href="privacy.html">Kebijakan Privasi</a>
+      <a href="terms.html">Ketentuan Penggunaan</a>
+    </nav>
+
+    <footer><strong>Abdul Hamied</strong><br>Jarvis Personal</footer>
+  </main>
+</body>
+</html>
